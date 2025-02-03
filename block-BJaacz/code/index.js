@@ -3,22 +3,36 @@
 /*
   Create a function named addTwo which accepts a number, adds 2 to the number and return the new value.
 */
-
+ function addTwo(a){
+ var newvalue = a + 2;
+ return`${newvalue}`;
+}
 /*
   Create a function named addThree which accepts a number, adds 3 to the number and return the new value.
 */
-
+function addThree(a){
+  var newvalue = a + 3;
+  return newvalue;
+}
 /*
   Create a function named addFive which accepts a number, adds 5 to the number and return the new value.
 */
-
+function addFive(a){
+  var newvalue = a + 5;
+  return newvalue;
+}
 /*
   Create a function named addTwoToArray which accepts:
     - An array of numbers
     - Returns a new array where 2 is added to each element
     - While doing so use the funciton addTwo
 */
-
+function addTwoToArray(arr , addTwo){
+let newArr = [];
+for(let i = 0;i < arr.length; i++){
+  newArr.push(addTwo(arr[i]));
+}
+return newArr;
 /*
   Create a function named addThreeToArray which accepts:
     - an array of numbers
