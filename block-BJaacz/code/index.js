@@ -3,21 +3,23 @@
 /*
   Create a function named addTwo which accepts a number, adds 2 to the number and return the new value.
 */
+
 function addTwo(num){
-  return num + 2;
+  return num + 2 ;
 }
 
 /*
   Create a function named addThree which accepts a number, adds 3 to the number and return the new value.
 */
 function addThree(num){
-  return num + 3;
+  return num + 3 ;
 }
+
 /*
   Create a function named addFive which accepts a number, adds 5 to the number and return the new value.
 */
 function addFive(num){
-  return num + 5;
+  return num + 5 ;
 }
 
 /*
@@ -26,15 +28,13 @@ function addFive(num){
     - Returns a new array where 2 is added to each element
     - While doing so use the funciton addTwo
 */
-function addTwoToArray(arr){
-let final = []
-  for(let num of arr){
-    final.push(addTwo(num));
-  }
-  return final
+function addTwoToArray(array){
+let final = [];
+for(let num of array){
+  final.push(addTwo(num));
 }
-
-
+return final;
+}
 
 /*
   Create a function named addThreeToArray which accepts:
@@ -42,11 +42,10 @@ let final = []
     - aeturns a new array where 2 is added to each element
     - while doing so use the funciton addThree
 */
-
-function addThreeToArray(arr){
+function addThreeToArray(array){
   let final = [];
-  for(let nums of arr){
-    final.push(addThree(nums));
+  for(let num of array){
+    final.push(addThree(num));
   }
   return final;
 }
@@ -58,14 +57,14 @@ function addThreeToArray(arr){
     - aeturns a new array where 2 is added to each element
     - while doing so use the funciton addThree
 */
-function addFiveToArray(arr){
-  let final = [] ;
-  for(let num of arr){
+
+function addFiveToArray(){
+  let final = [];
+  for(let num of array){
     final.push(addFive(num));
   }
   return final;
 }
-
 
 
 /*
@@ -83,10 +82,10 @@ In above function addTwoToArray, addThreeToArray, addFiveToArray we are repeatin
     console.log(changeArray([1, 2, 3, 4, 5, 6], addThree)); // [4, 5, 6, 7, 8, 9]
     console.log(changeArray([1, 2, 3, 4, 5, 6], addFive)); // [6, 7, 8, 9, 10, 11]
 */
-function changeArray(arr, cb){
+function changeArray(array, cb){
   let final = [];
-  for(let num of arr){
-   final.push(cb(num))   
+  for(let num of array){
+    final.push((cb(num));
   }
   return final;
 }
@@ -102,35 +101,30 @@ function changeArray(arr, cb){
     console.log(sendMessage("Hello Prompt!", prompt));
 */
 
-
-function sendMessage(msg,cb){
-  return cb(msg);
+function sendMessage(message,cb){
+ return cb(message);
 }
+
 /*
 
  Create a function named `first` that accepts an argument a function (callback) and return the same function defination.
 
 */
 
-function first(cb){
-  return cb;
-}
 /*
  Create a function named `second`
   - Inside second create another function named `third` which accepts a number, adds 1 to it and returns it
   - Return the function defination (third) from the second function
   - Also write the required code to call the function
 */
-function second(){
- function third(num){
-  return num + 1;
- }
-return third;
 
+function first(cb){
+  function third(num) {
+    return num + 1;
+
+  }
+  return third;
 }
-
-let val = second();
-
 
 /*
  Write a function named `callMe` which 
@@ -139,13 +133,15 @@ let val = second();
   - return final varibale from the function.
   - also write the required code to call the function.
 */
+
 function callMe(cb){
-    let final = cb();
+  let final = cb();
   return final;
+
 }
-let test = callMe(function(){return 21 ;})
-
-
+let test = callMe(function(){
+  return21
+})
 
 
 // Data Starts (Don't change this)
@@ -180,10 +176,9 @@ const grades = [
     console.log(isAdult(people[1])); // true
     console.log(isAdult(people[2])); // true
 */
-function isAdult(personDetails) {
-  return personDetails.age > 18;
+function isAdult(persondetails){
+  return persondetails.age > 18;
 }
-
 
 
 /*
@@ -196,10 +191,10 @@ function isAdult(personDetails) {
     console.log(isMale(grade[1])); // false
     console.log(isMale(grade[2])); // true
 */
-
-function isMale(personDetails){
-  return personDetails.sex === "M";
+function isMale(persondetails){
+  return persondetails.sex ==="M";
 }
+
 /*
   Create a function named isFemale which accepts:
     - an object
@@ -210,9 +205,7 @@ function isMale(personDetails){
     console.log(isFemale(grade[1])); // true
     console.log(isFemale(grade[2])); // false
 */
-function isFemale(personDetails){
-  return personDetails.sex === "F";
-}
+
 /*
   Create a function named isGradeA which accepts:
     - an object
@@ -223,9 +216,7 @@ function isFemale(personDetails){
     console.log(isGradeA(grade[1])); // false
     console.log(isGradeA(grade[2])); // true
 */
-function isGradeA(personDetails){
-  return personDetails.grade > 12;
-}
+
 /*
   Create a function named isGradeB which accepts:
     - an object
