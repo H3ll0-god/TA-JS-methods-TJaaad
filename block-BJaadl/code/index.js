@@ -10,9 +10,12 @@ let words = [
 ];
 
 // - Write a function findLongestWord that takes an array of words and returns the longest word from the array. (Use above array "words" to test it). If there are 2 with the same length, it should return the first occurrence.
+function 
 
 // - Convert the above array "words" into an array of length of word instead of word.
-
+function wordLengths(words) {
+  // your code here
+}
 // - Create a new array that only contains word with atleast one vowel.
 
 // - Find the index of the word "rhythm"
