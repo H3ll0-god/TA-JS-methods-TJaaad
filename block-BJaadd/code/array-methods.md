@@ -34,8 +34,9 @@ Example:
    - No it does not mutate the original array
 
 2. `join`
+let evenNumbers = [2,4,6,8,10];
 3. `flat`
-4. `push`
+4. `push`    
 5. `indexOf`
 6. `lastIndexOf`
 7. `includes`
