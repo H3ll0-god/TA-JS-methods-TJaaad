@@ -32,6 +32,7 @@ Example:
    - `charAt` accepts a index (number data type) and return the character on that index in the string.
 
 2. `toUpperCase`
+
 3. `toLowerCase`
 4. `trim`
 5. `trimEnd`
