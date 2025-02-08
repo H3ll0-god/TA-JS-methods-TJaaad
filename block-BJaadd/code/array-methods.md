@@ -36,6 +36,7 @@ Example:
 2. `join`
 let evenNumbers = [2,4,6,8,10];
 3. `flat`
+
 4. `push`    
 5. `indexOf`
 6. `lastIndexOf`
