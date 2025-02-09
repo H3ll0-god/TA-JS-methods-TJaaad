@@ -7,7 +7,7 @@ let to = 'Arya Stark';
 /*
 1. Find the index of the first 'is' in the variable quote. And store it in a new variable named indexOfIs
 */
-quote.indexOf('is');
+let indexOfIs = quote.indexOf('is');
 /*
 2. Find the character at the index indexOfIs (Problem 1) in quote.
 */
@@ -26,6 +26,7 @@ console.log(`The index of first is in quote is ${quote.indexOf('is')}`);
   The character at index 5 is ' '
 */
 
+The character at index 0 is 'T'
 /*
 5. Using the variable from , to and quote variable dispaly this message
   "Syrio Forel said There is only one thing we say to death: Not today to Arya Stark." (use concat method)
