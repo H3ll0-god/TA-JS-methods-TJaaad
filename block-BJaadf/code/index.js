@@ -8,7 +8,6 @@ let fruits = ["apple", "banana", "orange", "grape"];
 
 // Remove the first element from fruits and log the value of fruits (use delete arr[0])
 
-
 // Log the element on index 0 and 1
 
 // If the element at 0 index is undefined and index 1 is 'Banana' shift all the values to one lower index (use shift method)
