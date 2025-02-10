@@ -2,11 +2,11 @@
 let fruits = ['Apple', 'Banana','Mango','Pineapple'];
 
 // Add a new element ('Papaya') into fruits array at end
-
+fruits.push('Papaya');
 // Remove the last element from fruits array
-
+fruits.pop();
 // Log the current length of fruits array
-
+fruits.length
 // Remove the first element from fruits and log the value of fruits (use delete arr[0])
 
 // Log the element on index 0 and 1
@@ -38,7 +38,7 @@ let fruits = ['Apple', 'Banana','Mango','Pineapple'];
 
 // Convert all fruits name into uppercase and store in new array named uppercaseFruits
 
-let numbers = [1, 2, [3, 4]];
+var numbers = [1, 2, [3, 4]];
 let numbersTwo = [1, 2, [3, 4, [5, 6]]];
 let numbersThree = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
 
@@ -102,23 +102,41 @@ let words = [
 let numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 // - Create a sumArray function that takes an array of number as a parameter, and calculate the sum of all its numbers
-
+function sumArray(array){
+  return array.reduce((acc,cv)=>{
+    acc = acc + cv;
+    return acc;
+  },0);
+}
 // - Make a new array that contains number multiplied by 3 like [6, 18, 27 ...]
-
+let multiplyByThree = numbers.filter((num)=> num % 3 ===0);
 // - Create a new array that contains only even numbers
 
+let evenNumbers = numbers.filter((num)=> num % 2 === 0);
 
 // - Create  a new array that contains only odd numbers.
+let evenNumbers = numbers.filter((num)=> num % 2 !=== 0 );
 
 // - Create a new array that should have true for even number and false for odd numbers.
-
+let offOEven = numbers.map(num => num % 2 ===0 )
 // - Sort the above number in assending order.
+let sortedNumber = numbers.sort((a,b)=>a-b);
+let sortedNumber = [...numbers].sort((a,b)=>a-b);
 
 // - Does sort mutate the original array?
-
+Yes
 // - Find the sum of the numbers in the array.
-
+let sum = numbers.reduce((acc,cv)=>{
+  acc =acc + cv;
+  return acc;
+},0);
 //- Write a function averageNumbers that receives an array of numbers and calculate the average of the numbers
+function averageNumbers(array){
+  let avg = array.reduce((acc,cv)=>{
+    acc = acc + cv;
+    return acc;
+  })
+}
 let strings = [
   'seat',
   'correspond',
@@ -133,3 +151,6 @@ let strings = [
 ];
 
 // - Write a function averageWordLength that receives an array of words2 and calculate the average length of the words.
+function averageWordLength(words){
+
+}
