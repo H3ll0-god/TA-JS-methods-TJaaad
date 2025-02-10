@@ -1,15 +1,16 @@
 let fruits = ["apple", "banana", "orange", "grape"];
 
 // Add a new element ('Papaya') into fruits array at end
-
+fruits.push("Papaya");
 // Remove the last element from fruits array
+fruits.pop();
 
 // Log the current length of fruits array
-
+console.log(fruits)
 // Remove the first element from fruits and log the value of fruits (use delete arr[0])
-
+fruits.unshift();
 // Log the element on index 0 and 1
-
+console.log(fruits[0])
 // If the element at 0 index is undefined and index 1 is 'Banana' shift all the values to one lower index (use shift method)
 
 
@@ -42,27 +43,27 @@ let numbersTwo = [1, 2, [3, 4, [5, 6]]];
 let numbersThree = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
 
 // Convert the numbers array to one level element. Remove sub-arrays to individual elements and log them
-
+numbers.flat();
 // Convert the numbersTwo array to one level element. Remove all sub-arrays to individual elements and log them.
 // (for multiple level flat accepts argument by default it's 1 `array.flat(2)`)
-
+numbersTwo.flat(Infinity);
 // Convert the numbersThree array to one level element.
 // Remove all sub-arrays to individual elements, log them and update the value of numbersThree to the new flat array.
-
+numbersThree.flat(Infinity);
 // Use forEach to log all the elements of numberThree array
-
+console.log(numbersThree.forEach(Element));
 // Create a new variable named doubleNumbers that store the numberThree array (each element should be multiplied by 2). Use map
-
+let doubleNumbers = numbersThree.map*2;
 // Create a new variable named tripleNumbers that store the numberThree array (each element should be multiplied by 3). Use map
-
+let tripleNumbers = numbersThree.map*3;
 // Create a new variable named halfNumbers that store the numberThree array (each element should be divided by 2). Use map
-
+let halfNumbers = numbersThree.map*2;
 // Create a new variable named oddNumbers that store all the odd numbers in numbersThree array
-
+let oddNumbers = numbersThree.filter(num => num % 2 !=== 0);
 // Create a new variable named evenNumbers that store all the even numbers in numbersThree array
-
+let evenNumbers = numbersThree.filter(num => num % 3 === 0);
 // Find the index of 10 in numbersThree array
-
+console.log(numbersThree.indexOf[10]);
 // Reverse the values of numbersThree array
 
 // Reverse the values of numbersTwo array
