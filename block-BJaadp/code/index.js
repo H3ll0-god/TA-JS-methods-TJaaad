@@ -16,10 +16,19 @@ let persons = [
 // NOTE: Use reduce method whereever you can to solve this exercise:
 
 // Find the average grade
+let personsLength =persons.length;
+let averagegrade = persons.grade.reduce((acc,cv) => {
+  return acc + cv.grade{
+}, 0);
 
 // Find the average grade of male
-
+let maleGradeAvg = persons.filter((person) => person.sex === "M").reduce((acc,cv) => {
+return acc + cv.grade;
+} ,0) / personLn;
 // Find the average grade of female
+let averageGradeFemale = persons.filter((person.sex === "F").reduce((acc,cv)) => {
+  return acc + cv.grade;
+},0) / personsLn;
 
 // Find the highest grade
 
